@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+        
+
+    <title>Mass-Convert Any thing to anything</title>
+</head>
+
+<body>
+    
+    <div class="bg-dark text-center text-light pt-3 container-fluid">
+
+
+        <a class="navbar-brand text-light lh-1" href="/">
+            <h2 class="m-0"> Convert It! </h2>
+        </a>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-center nav-justified pb-3 pt-0">
+
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <ul class="navbar-nav mt-2 nav nav-pills nav-fill ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/units" role="button"
+                            aria-expanded="false">Units</a>
+                        <ul class="dropdown-menu bg-light ">
+                            <li><a class="dropdown-item" href="#">Mass</a></li>
+                            <li><a class="dropdown-item" href="#">Distance</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Your Converter Not Found?</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Documents</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <hr class="m-0 text-muted">
+
+    <div class="container-fluid bg-dark text-light min-vh-100 text-center pt-5">
+
+        <img src="/assests/units/images/mass.svg" class="card-img-top" width="80" height="80">
+        <h3 class="m-3">Mass</h3>
+
+        <form action="" autocomplete="off">
+
+            <div class="row justify-content-center m-2">
+
+                <div class="col-6 w-auto m-2">
+                    <input type="tel" size="10" id="number1" oninput="compute()"  placeholder="Enter Value..." class=" text-light border border-primary bg-dark p-2">
+                </div>
+
+                <div class="col-6 w-auto m-2">
+                    <select class="bg-secondary text-light border-0 rounded-2 p-2 w-auto" id="unit1" onchange="onSelect1()">
+                        
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="row  justify-content-center m-2">
+
+                <div class="col-6 w-auto m-2">
+                    <input type="tel" size="10" id="number2" readonly placeholder="Answer" class="text-light border border-secondary bg-dark p-2">
+                </div>
+
+                <div class="col-6 w-auto m-2">
+                    <select class="bg-secondary text-light border-0 rounded-2 p-2" id="unit2" onchange="onSelect2()">
+                        
+                    </select>
+                </div>
+            </div>
+
+
+
+
+
+        </form>
+
+    </div>
+
+    <script src="mass.js"></script>
+</body>
+
+</html>
