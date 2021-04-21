@@ -11,7 +11,7 @@
         crossorigin="anonymous"></script>
         
 
-    <title>Mass-Convert Any thing to anything</title>
+    <title>Age-Convert Any thing to anything</title>
 </head>
 
 <body>
@@ -25,9 +25,7 @@
 
     </div>
 
-
-
-    <nav class="navbar navbar-expand-xl bg-dark navbar-dark justify-content-center nav-justified pb-3 pt-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-center nav-justified pb-3 pt-0">
 
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -36,7 +34,7 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                <ul class="nav nav-pills nav-fill ">
+                <ul class="navbar-nav mt-2 nav nav-pills nav-fill ">
                     <li class="nav-item">
                         <a class="nav-link active" href="/">Home</a>
                     </li>
@@ -44,7 +42,7 @@
 
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/units" role="button"
                             aria-expanded="false">Units</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu bg-light ">
                             <li><a class="dropdown-item" href="#">Mass</a></li>
                             <li><a class="dropdown-item" href="#">Distance</a></li>
                             <li>
@@ -73,37 +71,61 @@
 
     <div class="container-fluid bg-dark text-light min-vh-100 text-center pt-5">
 
-        <img src="/assests/units/images/mass.svg" class="card-img-top" width="80" height="80">
-        <h3 class="m-3">Mass</h3>
+        <img src="/assests/units/images/age.svg" class="card-img-top" width="80" height="80">
+        <h3 class="m-3">Age</h3>
 
-        <form action="">
+        <form action="" autocomplete="off">
 
-            <div class="row w-auto justify-content-center m-2">
+            <div class="row justify-content-center m-2">
 
-                <div class="col-6 w-auto">
-                    <input type="number" id="number1" oninput="compute()"  placeholder="Enter Value..." class="text-light border border-primary bg-dark p-2">
+                <div class="col-6 w-auto m-2">
+                    <label for="number1">Birth Date:</label>
+                    <input type="date"   size="10"  id="number1" oninput="compute()" class=" text-light border border-primary bg-dark p-2">
+                   
                 </div>
 
-                <div class="col-6 w-auto">
-                    <select class="bg-secondary text-light border-0 rounded-2 p-2" id="unit1" onchange="onSelect1()">
-                        
-                    </select>
+                <div class="col-6 w-auto m-2">
+                    <label for="number2">Today Date:</label>
+                    <input type="date"  size="10" id="number2" oninput="compute()" class=" text-light border border-primary bg-dark p-2">
+                    
                 </div>
             </div>
 
 
+            
 
-            <div class="row w-auto justify-content-center m-2">
 
-                <div class="col-6 w-auto">
-                    <input type="text" id="number2" readonly placeholder="Enter Value..." class="text-light border border-secondary bg-dark p-2">
+            
+
+            <div class="row  justify-content-center m-2">
+
+                
+                <div class="col-6 w-auto m-2">
+                    <label for="number3">Years:</label>
+                    <input type="tel" value="0" size="4" id="number3" class=" text-light border border-secondary bg-dark p-2">
+                    
                 </div>
 
-                <div class="col-6 w-auto">
-                    <select class="bg-secondary text-light border-0 rounded-2 p-2" id="unit2" onchange="onSelect2()">
-                        
-                    </select>
+                <div class="col-6 w-auto m-2">
+                    <label for="number3">Months:</label>
+                    <input type="tel" value="0" size="2" id="number4" class=" text-light border border-secondary bg-dark p-2">
+                    
                 </div>
+                
+            </div>
+
+
+            <div class="row  justify-content-center m-2">
+
+                
+                <div class="col-6 w-auto m-2">
+                    <label for="number5">Days:</label>
+                    <input type="tel" value="0" size="2" id="number5" class=" text-light border border-secondary bg-dark p-2">
+                    
+                </div>
+
+            
+                
             </div>
 
 
@@ -114,7 +136,7 @@
 
     </div>
 
-    <script src="mass.js"></script>
+    <script src="age.js"></script>
 </body>
 
 </html>

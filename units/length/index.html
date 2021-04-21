@@ -11,7 +11,7 @@
         crossorigin="anonymous"></script>
         
 
-    <title>Mass-Convert Any thing to anything</title>
+    <title>Length-Convert Any thing to anything</title>
 </head>
 
 <body>
@@ -25,9 +25,7 @@
 
     </div>
 
-
-
-    <nav class="navbar navbar-expand-xl bg-dark navbar-dark justify-content-center nav-justified pb-3 pt-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-center nav-justified pb-3 pt-0">
 
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -36,7 +34,7 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                <ul class="nav nav-pills nav-fill ">
+                <ul class="navbar-nav mt-2 nav nav-pills nav-fill ">
                     <li class="nav-item">
                         <a class="nav-link active" href="/">Home</a>
                     </li>
@@ -44,7 +42,7 @@
 
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/units" role="button"
                             aria-expanded="false">Units</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu bg-light ">
                             <li><a class="dropdown-item" href="#">Mass</a></li>
                             <li><a class="dropdown-item" href="#">Distance</a></li>
                             <li>
@@ -76,16 +74,16 @@
         <img src="/assests/units/images/length.svg" class="card-img-top" width="80" height="80">
         <h3 class="m-3">Length</h3>
 
-        <form action="">
+        <form action="" autocomplete="off">
 
-            <div class="row w-auto justify-content-center m-2">
+            <div class="row justify-content-center m-2">
 
-                <div class="col-6 w-auto">
-                    <input type="number" id="number1" oninput="compute()"  placeholder="Enter Value..." class="text-light border border-primary bg-dark p-2">
+                <div class="col-6 w-auto m-2">
+                    <input type="tel" size="10" id="number1" oninput="compute()"  placeholder="Enter Value..." class=" text-light border border-primary bg-dark p-2">
                 </div>
 
-                <div class="col-6 w-auto">
-                    <select class="bg-secondary text-light border-0 rounded-2 p-2" id="unit1" onchange="onSelect1()">
+                <div class="col-6 w-auto m-2">
+                    <select class="bg-secondary text-light border-0 rounded-2 p-2 w-auto" id="unit1" onchange="onSelect1()">
                         
                     </select>
                 </div>
@@ -93,13 +91,13 @@
 
 
 
-            <div class="row w-auto justify-content-center m-2">
+            <div class="row  justify-content-center m-2">
 
-                <div class="col-6 w-auto">
-                    <input type="text" id="number2" readonly placeholder="Enter Value..." class="text-light border border-secondary bg-dark p-2">
+                <div class="col-6 w-auto m-2">
+                    <input type="tel" size="10" id="number2" readonly placeholder="Answer" class="text-light border border-secondary bg-dark p-2">
                 </div>
 
-                <div class="col-6 w-auto">
+                <div class="col-6 w-auto m-2">
                     <select class="bg-secondary text-light border-0 rounded-2 p-2" id="unit2" onchange="onSelect2()">
                         
                     </select>
