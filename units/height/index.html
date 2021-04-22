@@ -14,22 +14,34 @@
     <title>Height-Convert Any thing to anything</title>
 </head>
 
-<body>
-    
+<body class="container-fluid p-0 bg-dark">
+
+
+
+
+
     <div class="bg-dark text-center text-light pt-3 container-fluid">
 
 
-        <a class="navbar-brand text-light lh-1" href="/">
+
+        <a class="navbar-brand text-light" href="/">
             <h2 class="m-0"> Convert It! </h2>
         </a>
 
+
     </div>
+
+
+
 
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-center nav-justified pb-3 pt-0">
 
         <div class="container-fluid">
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                style="float: left;">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -43,12 +55,17 @@
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/units" role="button"
                             aria-expanded="false">Units</a>
                         <ul class="dropdown-menu bg-light ">
-                            <li><a class="dropdown-item" href="#">Mass</a></li>
-                            <li><a class="dropdown-item" href="#">Distance</a></li>
+                            <li><a class="dropdown-item" href="units/mass/">Mass</a></li>
+                            <li><a class="dropdown-item" href="units/length/">Length</a></li>
+                            <li><a class="dropdown-item" href="units/height/">Heigth</a></li>
+                            <li><a class="dropdown-item" href="units/age/">Age</a></li>
+                            <li><a class="dropdown-item" href="units/speed/">Speed</a></li>
+                            <li><a class="dropdown-item" href="units/time/">Time</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Your Converter Not Found?</a></li>
+                            <li><a class="dropdown-item" href="/converter-not-found.html">Your Converter Not Found?</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -67,10 +84,24 @@
 
     </nav>
 
-    <hr class="m-0 text-muted">
+    <hr class="m-0 bg-light">
+
+    <div class="container-fluid bg-dark text-light text-center pt-3 min-vh-100">
+
+        <a class="button btn-outline-light p-2 border round-4" href=".." style="float: left;">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+
+        </a>
 
     <div class="container-fluid bg-dark text-light min-vh-100 text-center pt-5">
 
+        
+        
         <img src="/assests/units/images/height.svg" class="card-img-top" width="80" height="80">
         <h3 class="m-3">Height</h3>
 
